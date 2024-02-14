@@ -5,56 +5,44 @@
     --colorFour: #E08752;
     --colorFive:#63383D;
     --colorSix: #ffffff;
+	--colorFooter: #080B0C;
     --fontSize: 16px;
 }
 
 body {
-    background: linear-gradient(100deg, var(--colorOne) 0%, var(--colorSix) 100%);;
+    background: linear-gradient(0deg, var(--colorFour) 0%, var(--colorSix) 100%);
     font-size: 1.4rem;
 }
 .headerbar{
-    animation: myAnim 3s ease 2s 1 alternate both;   
+    display: flex; 
+	justify-content: space-between;
+	margin: .4em; 
 }
-@keyframes myAnim {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateY(-250px);
-	}
 
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0);
-	}
+.LogoGreenWaveCoast {
+	width: 5em;
+	border-radius: 100px;
+	opacity: 0.90;
 
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateY(-65px);
-	}
+}
+.headerbar h1 {
+	display: none;
+}
+.headerbar li,
+.headerbar a{
+	list-style-type: none;
+	text-decoration: none;
+}
 
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateY(-28px);
-	}
-
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateY(-8px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
+.footerAllPages div{
+	width: 100%;
+	color: var(--colorSix);
+	display: flex;
+	flex-direction: column;
+	opacity: 0.90;
+	background-color: var(--colorFooter);
+	justify-content: space-evenly;
+}
+.footerAllPages a {
+	color:var(--colorSix)
 }
