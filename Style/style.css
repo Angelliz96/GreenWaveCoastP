@@ -19,6 +19,7 @@ body {
 }
 main {
 	display: flex;
+	/* background: url(../IMAGES/high-angle-shot-road-with-wooden-railings-leading-sea_181624-20319.jpg) center bottom/cover no-repeat padding-box fixed; */
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-content: center;
@@ -29,10 +30,16 @@ main {
 main img{
 	width: 25em;
 }
+main h2 a{
+	font-size: 4rem;
+	color: var(--colorFooter);
+}
 main h2{
 	font-size: 4rem;
+	color: var(--colorFooter);
 }
-main a{
+.textContainer p a{
+	font-size: 4rem;
 	color: var(--colorOne);
 }
 .headerbar{
@@ -41,6 +48,7 @@ main a{
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	
 	
 }
 header a{
@@ -129,6 +137,8 @@ svg text {
 
 .containerhome{
 	display: flex;
+	background: url(../IMAGES/beautiful-shot-people-walking-wild-seashore-low-hills_181624-15927.jpg)center bottom/cover no-repeat padding-box fixed;;
+	/* background-color: #ffffff; */
 	flex-direction: column;
 	width: 60%;
 	justify-content: center;
@@ -142,7 +152,8 @@ svg text {
 	justify-content: center;
 }
 .textContainer {
-	display: flex;	
+	display: flex;
+	background-color: #ffffff;	
 	flex-direction: row;
 	align-items: center;
 
@@ -150,10 +161,15 @@ svg text {
 .textContainer p{
 	flex-grow: 1;
 	overflow: hidden;
-	background-image: url(../IMAGES/beautiful-shot-people-walking-wild-seashore-low-hills_181624-15927.jpg);
+	background-color: var(--colorOne);
+	font-style: italic;
+	color: var(--colorFooter);
+	/* background-image: url(../IMAGES/beautiful-shot-people-walking-wild-seashore-low-hills_181624-15927.jpg); */
 	border-radius: 100px 18px 100px 17px;
 	margin: 3%;
 	padding: 6%;
+	
+	
 
 }
 .textContainer img {
@@ -183,3 +199,85 @@ svg text {
 	padding-left: 2%;
 }
 
+.contact-form {
+	font-size: 20px;
+    text-align: center;
+    color: #333; 
+
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.subscription-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-container h2 {
+    color: #333;
+}
+
+.subscription-container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.subscription-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription-container label {
+    margin-bottom: 8px;
+}
+
+.subscription-container input {
+    padding: 10px;
+    margin-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.subscription-container button,
+.contactUsNav {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-container button:hover, 
+.contactUsNav:hover {
+    background-color: #45a049;
+}
