@@ -1,0 +1,480 @@
+:root{
+    --colorOne:#65A584;
+    --colorTwo: #E7D378;
+    --colorThree: #CAAA5A;
+    --colorFour: #E08752;
+    --colorFive:#63383D;
+    --colorSix: #ffffff;
+	--colorFooter: #080B0C;
+    --fontSize: 16px;
+	--contactUsB: #ffea03;
+	--colorLinks: #45a049;
+	--colorSeven: #a0a0a0;
+
+
+}
+
+body {	
+	margin: 0%;
+    font-size: 1.4rem;
+	font-family: "Marhey", sans-serif;
+	
+	/* font-family: "Kanit", sans-serif;	 */
+}
+
+.maindiv {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center; 
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+main img{
+	width: 25em;
+}
+main h2 a{
+	font-size: 4rem;
+	/* color: var(--colorFooter); */
+	color:var(--colorLinks)
+}
+main h2{
+	font-size: 4rem;
+	color: var(--colorLinks);
+}
+.textContainer p a{
+	font-size: 4rem;
+	color: var(--colorOne);
+}
+.headerbar{
+	background: url("../IMAGES/oregon-51682_960_720.jpg")center center/cover no-repeat content-box local;
+    display: flex; 
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: space-between;
+	
+	
+}
+.contactUsNav li{ 
+	padding: .3em;
+	background-color: var(--colorLinks);
+
+}
+header a{
+	color: var(--colorSix);
+}
+
+.LogoGreenWaveCoast{
+	width: 15em;
+	border-radius: 100px;
+	opacity: 0.75;
+	margin: 6%;
+}
+nav{
+	background-color: #080B0C;
+	opacity: 0.75;
+	width: 100%
+	
+}
+
+.headerbar ul{
+	display: flex;
+	align-items: center;
+	margin: 1em;		
+	justify-content: space-around;
+	 
+}
+
+
+.headerbar li{
+	margin-right: 2em;
+	margin-left: 2em;
+	
+}
+
+.headerbar .contactUsNav a {
+    color: var(--colorFooter); 
+}
+
+.headerbar li a {
+    background-color: transparent;
+	/* font-weight: bold; */
+	color:var(--colorSix);
+    transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1) 0s; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.headerbar li a:hover {
+	opacity: 1;
+	background-color: #45a049;
+}
+
+.headerbar li,
+.headerbar a,
+ main a{
+	list-style-type: none;
+	text-decoration: none;
+}
+.title-home-page{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 2em	
+	
+	/* background: url("../IMAGES/3726696.jpg")center center/cover no-repeat content-box local; */
+}
+.title-home-page h1 {
+    font-weight: 900;
+	font-size: 2.5em;
+	font-family: "Indie Flower", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+
+svg {
+	font-family: "Akaya Kanadaka", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #65A584;
+	font-size: 150px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(0,0,0,0); stroke: rgba(101,165,132,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(0,0,0,0); stroke: rgba(101,165,132,1); }
+	80%  {fill: rgba(0,0,0,0); stroke: rgba(101,165,132,1); stroke-width: 3; }
+	100% {
+		fill: rgba(0,0,0,1); stroke: rgba(101,165,132,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+ .wrapper {background-color: linear-gradient(0deg, var(--colorFour) 0%, var(--colorSix) 100%);
+	font-size: 10px;
+	
+} 
+
+.containerhome{
+	display: flex;
+	background: url(../IMAGES/beautiful-shot-people-walking-wild-seashore-low-hills_181624-15927.jpg)center bottom/cover no-repeat padding-box fixed;
+	flex-direction: column;
+	width: 60%;
+	justify-content: center;
+	
+} 
+
+.headerMain{
+	display: flex;
+	justify-content: center;
+}
+.textContainer {
+	display: flex;
+	background-color: #ffffff;	
+	flex-direction: row;
+	align-items: center;
+
+}
+.textContainer p{
+	flex-grow: 1;
+	overflow: hidden;
+	background-color: var(--colorOne);
+	font-style: italic;
+	color: var(--colorFooter);
+	border-radius: 100px 18px 100px 17px;
+	margin: 3%;
+	padding: 6%;
+	
+	
+
+}
+.textContainer img {
+	border-radius: 100px 18px 100px 17px; 
+}
+  
+
+
+/* FOOTER */
+
+.footerAllPages {	
+	color: var(--colorSix);
+	display: flex;
+	flex-direction: column;
+	opacity: 0.90;
+	background-color: var(--colorFooter);	
+	align-items: center;
+
+}
+.footerAllPages a {
+	color:var(--colorSix);
+
+}
+.footerAllPages ul{
+	list-style: none;
+}
+
+
+.followUs,
+.copyFooter,
+.subscription-container form{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.followUs ul{
+	display: flex;
+	width: 100%;
+}
+
+.followUs li{
+	width: 50%;
+
+}
+
+.contact-form {
+	font-size: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+input[type="submit"],
+.subscription-container button {
+    background-color: var(--colorLinks);
+    color: var(--colorSix);
+    cursor: pointer;
+	padding: 10px;
+}
+h1{
+	color: #45a049;
+}
+input[type="submit"]:hover,
+.subscription-container button:hover {
+    background-color: #555;
+}
+
+.subscription-container {
+    text-align: center;
+    /* background-color: #fff; */
+    padding: 20px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-container h2 {
+    color: var(--colorLinks);
+}
+
+.subscription-container p {
+    color:var(--colorSix);
+    margin-bottom: 20px;
+}
+
+
+.subscription-container label {
+    margin-bottom: 8px;
+}
+
+.subscription-container input {
+    /* padding: 10px; */
+    margin-bottom: 16px;
+    width: 60%;
+    box-sizing: border-box;
+}
+.subscribe-container{
+	background-color: var(--colorFour);
+	width: 100%;
+}
+
+
+.contactUsNav {   
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-label {
+    padding-right: 10%; 
+}
+
+.category-select {
+    padding: 1%; 
+}	
+
+@media only screen and (max-width: 600px) {
+    .headerbar {
+        padding: 10px;
+    }
+
+    .LogoGreenWaveCoast {
+        width: 100px;
+    }
+
+    .headerbar ul {
+        display: none;
+    }
+
+    .headerbar .header-bar-menu {
+        display: none;
+    }
+
+    .maindiv {
+        padding: 20px;
+    }
+	.title-home-page{
+		display: flex;
+		width: 80%;	
+
+	}
+
+    .title-home-page h1 {
+        font-size: 2rem;
+		font-weight: 900;	
+		
+    }
+	.maindiv{
+		display: flex;
+		width: 100%;
+	}
+	.containerhome{
+		display: flex;
+	}
+	.headerMain a{
+		font-size: 2rem;
+	}
+	.textContainer{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+	.textContainer img{
+		width: 100%;
+	}
+
+
+    .textContainer p {
+		display: none;
+        font-size: 16px;
+		width: 50%;
+	
+    }
+
+	@media only screen and (min-width: 601px) and (max-width: 1024px) { 
+		/* body{
+			background-color:blue;
+		}
+		 */
+	
+		.LogoGreenWaveCoast {
+			width: 100px;
+		}
+	
+		.headerbar ul {
+			display: none;
+		}
+	
+		.headerbar .header-bar-menu {
+			display: none;
+		}
+	
+		.maindiv {
+			padding: 26px;
+		}
+		.title-home-page{
+			display: flex;
+			width: 80%;	
+	
+		}
+	
+		.title-home-page h1 {
+			font-size: 2rem;
+			font-weight: 900;	
+			
+		}
+		.maindiv{
+			display: flex;
+			width: 100%;
+		}
+		.containerhome{
+			display: flex;
+		}
+		.headerMain a{
+			font-size: 2rem;
+		}
+		.textContainer{
+			display: flex;
+			flex-direction: column;
+			align-content: center;			
+			width: 100%;
+		}
+
+		.textContainer img{
+			width: 60%;
+		}
+	
+	
+		.textContainer p {
+			display: inline-block;			
+			font-size: .6rem;
+			width: 50%;
+		
+		}
+	}
+	
+
+
+	@media only screen and (min-width: 1025px) {
+		
+		.navegationBar {
+			display: none;
+		}
+		.textContainer{
+			display: flex;
+			flex-direction: column;
+			
+		}
+		.textContainer p {
+			display:block;			
+			font-size: 1rem;
+			width: 30%;
+		
+		}
+		.textContainer img{
+			width: 50%;
+		}
+	
+	
+	}
+
+
+

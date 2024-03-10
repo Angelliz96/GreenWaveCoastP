@@ -1,46 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>/Home page</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ae0f99c19c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+<!-- GOOGLE FONT -->
+
+  </head>
+  <body>
     <header>
-        <h1>GreenWaveCoast</h1>
+      <div class="headerbar">
+        <a href="home.html"
+          ><img
+            class="LogoGreenWaveCoast"
+            src="IMAGES/2024.png"
+            alt="Logo GreenWaveCoast"
+        /></a>
+
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="featured.html">Featured Articles</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <!-- <div class ="contactUsNav"> -->
+              <li><a href="login.html">Sign in</a></li>
+               <div class="contactUsNav">
+                <li><a href="contact.html">Contact us</a></li></div>
+               <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff;"></i></a></li>
+              
+          </ul>
+
+          
         </nav>
-        <img src="#" alt="Logo">
+      </div>
     </header>
 
-    <main></main>
+    <main>
+      <!-- PRUEBA -->
+      <!-- <div class="wrapper">
+        <svg>
+          <text
+            x="50%"
+            y="50%"
+            dy=".35em"
+            text-anchor="middle"
+            style="font-size: 80px"
+          >
+            GreenWaveCoast
+          </text>
+        </svg>
+      </div> -->
+      <div class='maindiv'>
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+      </div>
+    
+      
+      
+        <!-- <h2>Contact Information:</h2> -->
+<p>Have questions, feedback, or suggestions? We're here to help! Connect with our team and learn more about our organization and initiatives. Whether you're interested in partnering with us on a project, volunteering your time and talents, or simply want to learn more about sustainability in Clatsop County, we'd love to hear from you. Reach out today and let's work together to create a greener, more sustainable future for all.</p>
+</div>
+    </main>
 
 
     <footer>
-        <div>
-            <h2>Contact Us</h2>
-            <a href="lizcanoangelyj@gmail.com">Email</a>
-            <a href="tel: +14255326100">Number</a>
+      
+        <div class="footerAllPages">
+
+          <div class="subscription-container">
+            <h2>Subscribe to our Newsletter!</h2>
+            <p>Receive the latest updates and special offers directly in your inbox.</p>
+            
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="YourEmail@example.com" required>
+                <input type="submit" value="Send Message">
+            </form>
         </div>
-        
-        <div>
+          
+            
+        <div class=" followUs">
             <h2>Follow us</h2>
             <ul>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook fa-bounce fa-lg"></i></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-x fa-bounce fa-lg"></i></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-bounce fa-lg"></i></a></li>
             </ul>
         </div>
     
-        <div>
+        <div class="copyFooter">
             <p>&copy; 2024 Angely Lizcano / GreenWaveCoast</p>
+        </div>
         </div>
     </footer>
     
