@@ -12,37 +12,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Marhey:wght@300..700&display=swap" rel="stylesheet">
 <!-- GOOGLE FONT -->
 
   </head>
   <body>
     <header>
       <div class="headerbar">
+      
+        
         <a href="home.html"
           ><img
             class="LogoGreenWaveCoast"
             src="IMAGES/2024.png"
             alt="Logo GreenWaveCoast"
         /></a>
-
         <nav>
+          <div class="navegationBar">
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-bars fa-lg"></i></a></div>
+          <div class = "header-bar-menu">
+          
+          
           <ul>
+            
+                    
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="sustainability.html">Sustainability</a></li>
             <li><a href="resources.html">Resources</a></li>
+            
             <!-- <div class ="contactUsNav"> -->
-              <div class="contactUsNav">
-               <li><a href="contact.html">Contact us</a></li>
-              </div>
+               <li><a href="login.html">Sign in</a></li>
+               <div class="contactUsNav">
+                <li><a href="contact.html">Contact us</a></li></div>
+               <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff;"></i></a></li>
+              
           </ul>
         </nav>
+      </div>
+
+        
       </div>
     </header>
 
     <main>
+      <div class="title-home-page">
+      <h1>BUILD A SUSTAINABLE FUTURE ONE WAVE AT A TIME</h1>
+    </div>
+    
       <!-- PRUEBA -->
-      <div class="wrapper">
+      <!-- <div class="wrapper">
         <svg>
           <text
             x="50%"
@@ -54,10 +76,13 @@
             GreenWaveCoast
           </text>
         </svg>
-        <!-- <h1>Building a sustaibility future one wave at a time</h1> -->
-      </div>
+
+
+        
+      </div> -->
 
       <!-- <h1>GreenWaveCoast</h1> -->
+      <div class='maindiv'>
 
       <div class="containerhome">        
           <div class="headerMain">
@@ -133,39 +158,38 @@
           </div>
         </div>
       </div>
+    </div>
     </main>
     <footer>
+      
       <div class="footerAllPages">
-        <div class="contactUs">
-          <h2>Contact Us</h2>
-          <a href="lizcanoangelyj@gmail.com">Email</a>
-          <a href="tel: +14255326100">Number</a>
-        </div>
-        <div class="followUs">
+
+        <div class="subscription-container">
+          <h2>Subscribe to our Newsletter!</h2>
+          <p>Receive the latest updates and special offers directly in your inbox.</p>
+          
+          <form>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="YourEmail@example.com" required>
+              <input type="submit" value="Send Message">
+          </form>
+      </div>
+        
+          
+      <div class=" followUs">
           <h2>Follow us</h2>
           <ul>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer"
-                ><i class="fa-brands fa-facebook fa-bounce fa-lg"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer"
-                ><i class="fa-solid fa-x fa-bounce fa-lg"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram fa-bounce fa-lg"></i>
-              </a>
-            </li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook fa-bounce fa-lg"></i></a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-x fa-bounce fa-lg"></i></a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-bounce fa-lg"></i></a></li>
           </ul>
-        </div>
-
-        <div class="copyFooter">
-          <p>&copy; 2024 Angely Lizcano / GreenWaveCoast</p>
-        </div>
       </div>
-    </footer>
-  </body>
-</html>
+  
+      <div class="copyFooter">
+          <p>&copy; 2024 Angely Lizcano / GreenWaveCoast</p>
+      </div>
+      </div>
+  </footer>
+  
+</body>
+</html
