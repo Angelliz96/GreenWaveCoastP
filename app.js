@@ -1,29 +1,50 @@
-//REQUIRE ALL THE DEPENDENCIES
-const express = require("express"); //FRAMEWORK use for make apps in node.js
-const morgan = require("morgan"); //register the information request HTTP 
-const path = require("path"); // Its use to manipulate routes from files and documents Ex: app.js packet.json
-//USE EXPRESS
-const app = express(); //NOW ALL THE SERVER IS USING EXPRESS
-const PORT = 3001; // CHANNEL TO TALK WITH MY SERVER
-const cors = require("cors"); // Help with the safety when people from other services different that mine join to my page, people who want to see my front end from others domains different that mine
-const path = require("node:path"); //help to handle the routes from my directory 
-const { request } = require("node:http");
-
+require("dotenv").config();
+require("./config/connection");
+require("./config/adminStrategy");
+const express = require("express");
+const morgan = require("morgan");
+const path = require("path");
+const app = express();
+const PORT = process.env.PORT || 3000;
+const cors = require("cors");
+const helmet = require("helmet");
+const session = require("express-session");
+const passport = require("passport");
 app.use(morgan("dev"));
+const siteRoutes = require("./routes/siteRoutes");
+const adminRoutes = require("./routes/adminRoutes");
 
-//Middlware
-//Help to handle the informationm filter the request HTTP
-app.use(express.json()); // In charge to handle the request with J.son format
-app.use(express.urlencoded({ extended: true })); // Request with URL HTML
-app.use(express.static(path.join(__dirname + "/public"))); //Request that are in Public and are statics like CSS, HTML, img
+app.use(cors());
+app.use(helmet());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "/public")));
+app.use(
+  session({
+    secret: process.env.SECRET_KEY,
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+app.use(passport.initialize());
+app.use(passport.session());
+//GET routes
+
+app.get("/", (request, response, next) => {
+  response.status(200).json({
+    success: { message: "This route points to the Home page" },
+    statusCode: 200,
+  });
+});
+
+app.use("/api/site", siteRoutes);
+app.use("/api/admin", adminRoutes);
+// app.use(contactRoutes);
 
 //ROUTE TO THE HOME PAGE
 
-app.get("/", (request, response, next) => {
-  response
-    .status(200)
-    .json({
-      success: { message: "This route points to the Home page" },
-      statusCode: 200,
-    });
+app.listen(PORT, () => {
+  //SEND A MESSAGE
+  console.log(`The server is listening on port ${PORT}`);
+  console.log(`http://localhost:${PORT}`);
 });
