@@ -37,7 +37,7 @@ app.get("/", (request, response, next) => {
   });
 });
 
-app.use("/api/site", siteRoutes);
+app.use("/api/resources", siteRoutes);
 app.use("/api/admin", adminRoutes);
 // app.use(contactRoutes);
 

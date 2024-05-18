@@ -8,7 +8,8 @@
         "number": "+1-123-456-7890",
         "email": "contact@sustainablefarming.org",
         "webpage": "https://www.sustainablefarming.org",
-        "description": "This initiative focuses on promoting sustainable farming practices in California. It provides resources and training for farmers to adopt eco-friendly methods that reduce environmental impact and improve soil health."
+        "description": "This initiative focuses on promoting sustainable farming practices in California. It provides resources and training for farmers to adopt eco-friendly methods that reduce environmental impact and improve soil health.",
+        "category": "Agriculture"
     },
     {
         "_id": {
@@ -19,7 +20,8 @@
         "number": "+1-987-654-3210",
         "email": "info@urbangreenspaces.org",
         "webpage": "https://www.urbangreenspaces.org",
-        "description": "The Urban Green Spaces Project aims to increase the number of green spaces in urban areas. By creating parks and community gardens, the project seeks to improve air quality and provide recreational areas for residents."
+        "description": "The Urban Green Spaces Project aims to increase the number of green spaces in urban areas. By creating parks and community gardens, the project seeks to improve air quality and provide recreational areas for residents.",
+        "category": "Urban Development"
     },
     {
         "_id": {
@@ -30,7 +32,8 @@
         "number": "+1-555-123-4567",
         "email": "support@oceancleanup.org",
         "webpage": "https://www.oceancleanup.org",
-        "description": "This campaign is dedicated to removing plastic waste from the ocean. Using innovative technologies, the Ocean Cleanup Campaign works to protect marine life and restore the health of our oceans."
+        "description": "This campaign is dedicated to removing plastic waste from the ocean. Using innovative technologies, the Ocean Cleanup Campaign works to protect marine life and restore the health of our oceans.",
+        "category": "Marine Conservation"
     },
     {
         "_id": {
@@ -41,7 +44,8 @@
         "number": "+49-30-12345678",
         "email": "contact@renewableenergy.org",
         "webpage": "https://www.renewableenergy.org",
-        "description": "The Renewable Energy Initiative promotes the use of renewable energy sources such as wind, solar, and hydro power. The project provides information and support for individuals and businesses looking to switch to sustainable energy solutions."
+        "description": "The Renewable Energy Initiative promotes the use of renewable energy sources such as wind, solar, and hydro power. The project provides information and support for individuals and businesses looking to switch to sustainable energy solutions.",
+        "category": "Energy"
     },
     {
         "_id": {
@@ -52,7 +56,8 @@
         "number": "+254-20-1234567",
         "email": "info@wildlifeconservation.org",
         "webpage": "https://www.wildlifeconservation.org",
-        "description": "Focused on protecting endangered species, the Wildlife Conservation Program in Kenya works with local communities and governments to preserve habitats and prevent poaching. The program also conducts research to improve conservation strategies."
+        "description": "Focused on protecting endangered species, the Wildlife Conservation Program in Kenya works with local communities and governments to preserve habitats and prevent poaching. The program also conducts research to improve conservation strategies.",
+        "category": "Wildlife Conservation"
     },
     {
         "_id": {
@@ -63,7 +68,8 @@
         "number": "+86-10-12345678",
         "email": "support@cleanairinitiative.org",
         "webpage": "https://www.cleanairinitiative.org",
-        "description": "The Clean Air Initiative aims to reduce air pollution in Beijing by promoting the use of electric vehicles and supporting policies that limit emissions from factories and power plants. The initiative also educates the public about the health impacts of air pollution."
+        "description": "The Clean Air Initiative aims to reduce air pollution in Beijing by promoting the use of electric vehicles and supporting policies that limit emissions from factories and power plants. The initiative also educates the public about the health impacts of air pollution.",
+        "category": "Air Quality"
     },
     {
         "_id": {
@@ -74,7 +80,8 @@
         "number": "+55-11-98765432",
         "email": "contact@reforestationproject.org",
         "webpage": "https://www.reforestationproject.org",
-        "description": "This project is dedicated to reforesting areas of the Amazon Rainforest that have been deforested. By planting native trees and working with indigenous communities, the Reforestation Project aims to restore biodiversity and combat climate change."
+        "description": "This project is dedicated to reforesting areas of the Amazon Rainforest that have been deforested. By planting native trees and working with indigenous communities, the Reforestation Project aims to restore biodiversity and combat climate change.",
+        "category": "Forestry"
     },
     {
         "_id": {
@@ -85,7 +92,8 @@
         "number": "+27-21-1234567",
         "email": "info@sustainablewater.org",
         "webpage": "https://www.sustainablewater.org",
-        "description": "The Sustainable Water Management project focuses on improving water conservation and management practices in Cape Town. It includes initiatives to reduce water waste, enhance water recycling, and ensure access to clean drinking water."
+        "description": "The Sustainable Water Management project focuses on improving water conservation and management practices in Cape Town. It includes initiatives to reduce water waste, enhance water recycling, and ensure access to clean drinking water.",
+        "category": "Water Management"
     },
     {
         "_id": {
@@ -96,7 +104,8 @@
         "number": "+61-2-12345678",
         "email": "contact@climatechangeedu.org",
         "webpage": "https://www.climatechangeedu.org",
-        "description": "This educational program aims to raise awareness about climate change and its impacts. By providing resources and organizing workshops, Climate Change Education helps communities and schools understand the importance of sustainable practices."
+        "description": "This educational program aims to raise awareness about climate change and its impacts. By providing resources and organizing workshops, Climate Change Education helps communities and schools understand the importance of sustainable practices.",
+        "category": "Education"
     },
     {
         "_id": {
@@ -107,6 +116,7 @@
         "number": "+31-20-1234567",
         "email": "support@ecotransport.org",
         "webpage": "https://www.ecotransport.org",
-        "description": "The Eco-Friendly Transportation project promotes the use of bicycles, electric vehicles, and public transportation to reduce carbon emissions. It also advocates for the development of infrastructure that supports sustainable transportation options."
+        "description": "The Eco-Friendly Transportation project promotes the use of bicycles, electric vehicles, and public transportation to reduce carbon emissions. It also advocates for the development of infrastructure that supports sustainable transportation options.",
+        "category": "Transportation"
     }
 ]

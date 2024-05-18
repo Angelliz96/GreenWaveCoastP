@@ -1,20 +1,21 @@
 const Resources = require("../models/siteModels");
+
 const getAllResource = async (request, response, next) => {
-  try {
-    await Comics.find({}).then((resource) => {
-      response.status(200).json({ data: resources });
-    });
-  } catch (error) {
-    next(error);
-  }
+  await Resources.find({}).then((resources) =>
+  response.status(200).json({
+    success: { message: "This route points to the resource page with all of the resource" },
+    data: resources,
+    statusCode: 200,
+  })
+  )
 };
 
 const getResource = async (request, response, next) => {
   const { id } = request.params;
 
   try {
-    const foundResources = await Resources.findById(id);
-    if (!foundResources) {
+    const foundResource = await Resources.findById(id);
+    if (!foundResource) {
       return response.status(404).json({
         error: { message: "Resource not found" },
         statusCode: 404,
@@ -22,7 +23,7 @@ const getResource = async (request, response, next) => {
     }
     response.status(200).json({
       success: { message: "Found the Resource!" },
-      data: foundResources,
+      data: foundResource,
       statusCode: 200,
     });
   } catch (err) {
@@ -34,7 +35,7 @@ const getResource = async (request, response, next) => {
 };
 
 const createResource = async (request, response, next) => {
-  const { title, location, number, email, webpage, description } = request.body;
+  const { title, location, number, email, webpage, description, category } = request.body;
 
   const newResource = new Resources({
     title: title,
@@ -43,6 +44,7 @@ const createResource = async (request, response, next) => {
     email: email,
     webpage: webpage,
     description: description,
+    category: category,
   });
 
   try {
@@ -50,7 +52,7 @@ const createResource = async (request, response, next) => {
     response.status(201).json({
       success: {
         message: "A new Resource is created",
-        data: newBook,
+        data: newResource,
         statusCode: 201,
       },
     });
@@ -63,10 +65,10 @@ const createResource = async (request, response, next) => {
 };
 const editResource = async (request, response, next) => {
   const { id } = request.params;
-  const { title, location, number, email, webpage, description } = request.body;
+  const { title, location, number, email, webpage, description, category } = request.body;
 
   try {
-    const updatedResource = await Resources.findByIdAndUpdate(
+    const updatedResource = await Data.findByIdAndUpdate(
       id,
       {
         title,
@@ -75,6 +77,7 @@ const editResource = async (request, response, next) => {
         email,
         webpage,
         description,
+        category,
       },
       { new: true }
     );
@@ -103,7 +106,7 @@ const deleteResource = async (request, response, next) => {
   const { id } = request.params;
 
   try {
-    const deleteResource = await Resource.findByIdAndDelete(id);
+    const deleteResource = await Resources.findByIdAndDelete(id);
     if (!deleteResource) {
       return res.status(404).json({
         error: { message: "Resource not found" },
@@ -135,7 +138,7 @@ const deleteSubscribeNewsletter = async (request, response, next) => {
   const { id } = request.params;
 
   try {
-    const deleteSubscribeNewsletter = await Resources.findByIdAndDelete(id);
+    const deleteSubscribeNewsletter = await Data.findByIdAndDelete(id);
     if (!deleteSubscribeNewsletter) {
       return res.status(404).json({
         error: { message: "Subscribe to Newsletter not found" },
