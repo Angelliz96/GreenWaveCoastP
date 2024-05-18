@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const resourcesSchema = new Schema({
+const resourcesSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
@@ -23,6 +23,10 @@ const resourcesSchema = new Schema({
         required: true,
     },
     description: {
+        type: String,
+        required: true,
+    },
+    category:{
         type: String,
         required: true,
     }

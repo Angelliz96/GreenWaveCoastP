@@ -13,6 +13,7 @@ const passport = require("passport");
 app.use(morgan("dev"));
 const siteRoutes = require("./routes/siteRoutes");
 const adminRoutes = require("./routes/adminRoutes");
+const subscribeRoutes = require("./routes/subscribeRoute")
 
 app.use(cors());
 app.use(helmet());
@@ -37,8 +38,9 @@ app.get("/", (request, response, next) => {
   });
 });
 
-app.use("/api/site", siteRoutes);
+app.use("/api/resources", siteRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("api/subscribe", subscribeRoutes)
 // app.use(contactRoutes);
 
 //ROUTE TO THE HOME PAGE
