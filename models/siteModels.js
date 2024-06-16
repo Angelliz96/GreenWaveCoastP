@@ -6,7 +6,7 @@ const resourcesSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    location: {
+    category: {
         type: String,
         required: true,
     },
@@ -29,7 +29,7 @@ const resourcesSchema = new mongoose.Schema({
     category:{
         type: String,
         required: true,
-    }
+    },
 });
 
 const Resources = mongoose.model("Resources", resourcesSchema);
